@@ -1,0 +1,9 @@
+name: Amongus
+version: ${project.version}
+main: com.gabe.amongus.Amongus
+api-version: 1.16
+commands:
+  aua:
+    description: Among Us Admin command
+  au:
+    description: Among Us command
