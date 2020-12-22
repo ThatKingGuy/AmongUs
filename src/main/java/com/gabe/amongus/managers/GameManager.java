@@ -1,5 +1,6 @@
-package com.gabe.amongus.maps;
+package com.gabe.amongus.managers;
 
+import com.gabe.amongus.maps.Game;
 import org.bukkit.entity.Player;
 
 import java.util.Collections;

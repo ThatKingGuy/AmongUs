@@ -1,18 +1,15 @@
 package com.gabe.amongus.commands;
 
 import com.gabe.amongus.Amongus;
-import com.gabe.amongus.SelectionManager;
 import com.gabe.amongus.enums.Room;
 import com.gabe.amongus.enums.TaskType;
 import com.gabe.amongus.maps.Map;
-import com.gabe.amongus.messages.MessageManager;
+import com.gabe.amongus.managers.MessageManager;
 import org.bukkit.ChatColor;
-import org.bukkit.Material;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
-import org.bukkit.inventory.ItemStack;
 
 public class AdminCommand implements CommandExecutor {
     private final Amongus plugin;

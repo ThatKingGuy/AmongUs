@@ -1,8 +1,9 @@
 package com.gabe.amongus;
 
 import com.gabe.amongus.commands.AdminCommand;
-import com.gabe.amongus.maps.GameManager;
-import com.gabe.amongus.maps.MapManager;
+import com.gabe.amongus.managers.GameManager;
+import com.gabe.amongus.managers.MapManager;
+import com.gabe.amongus.managers.SelectionManager;
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
 

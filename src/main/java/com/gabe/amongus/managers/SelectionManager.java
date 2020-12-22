@@ -1,5 +1,6 @@
-package com.gabe.amongus;
+package com.gabe.amongus.managers;
 
+import com.gabe.amongus.CuboidSelection;
 import org.bukkit.Location;
 import org.bukkit.entity.Player;
 

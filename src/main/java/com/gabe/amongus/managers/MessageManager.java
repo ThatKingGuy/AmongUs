@@ -1,4 +1,4 @@
-package com.gabe.amongus.messages;
+package com.gabe.amongus.managers;
 
 import org.bukkit.ChatColor;
 

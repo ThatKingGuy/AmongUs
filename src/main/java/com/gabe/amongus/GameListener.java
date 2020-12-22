@@ -1,7 +1,7 @@
 package com.gabe.amongus;
 
 import com.gabe.amongus.maps.Game;
-import com.gabe.amongus.messages.MessageManager;
+import com.gabe.amongus.managers.MessageManager;
 import org.bukkit.Bukkit;
 import org.bukkit.Location;
 import org.bukkit.Material;

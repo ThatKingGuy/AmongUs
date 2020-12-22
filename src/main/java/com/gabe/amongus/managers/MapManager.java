@@ -1,4 +1,4 @@
-package com.gabe.amongus.maps;
+package com.gabe.amongus.managers;
 
 import com.gabe.amongus.Amongus;
 import com.gabe.amongus.CuboidSelection;
@@ -16,7 +16,7 @@ import java.io.IOException;
 import java.util.*;
 
 public class MapManager {
-    private Set<Map> maps = new HashSet<>();
+    private Set<com.gabe.amongus.maps.Map> maps = new HashSet<>();
     private File gameYml;
     private FileConfiguration gameData;
 
@@ -25,16 +25,16 @@ public class MapManager {
         gameData = YamlConfiguration.loadConfiguration(gameYml);
     }
 
-    public void addMap(Map map){
+    public void addMap(com.gabe.amongus.maps.Map map){
         maps.add(map);
     }
-    public Set<Map> getMaps(){
+    public Set<com.gabe.amongus.maps.Map> getMaps(){
         return Collections.unmodifiableSet(maps);
     }
 
     public void loadMaps() throws InvalidConfigurationLocation {
         for(String s : gameData.getKeys(false)){
-            Map map = new Map(s);
+            com.gabe.amongus.maps.Map map = new com.gabe.amongus.maps.Map(s);
             Bukkit.getLogger().info(s);
 
             if(gameData.getString(s+".button") != null){
@@ -63,7 +63,7 @@ public class MapManager {
         }
     }
 
-    public void saveMap(Map map){
+    public void saveMap(com.gabe.amongus.maps.Map map){
         gameData.set(map.getName()+".button", serialiseLoc(map.getButton()));
 
         List<String> spawns = new ArrayList<>();
@@ -124,8 +124,8 @@ public class MapManager {
         }
     }
 
-    public Map getMap(String name){
-        for(Map map : maps){
+    public com.gabe.amongus.maps.Map getMap(String name){
+        for(com.gabe.amongus.maps.Map map : maps){
             if(map.getName().equals(name)){
                 return map;
             }
