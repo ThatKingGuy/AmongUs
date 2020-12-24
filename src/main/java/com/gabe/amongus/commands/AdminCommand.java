@@ -142,6 +142,10 @@ public class AdminCommand implements CommandExecutor {
                         player.sendMessage(MessageManager.invalid_spawn_command);
                     }
                 }
+                else if(args[0].equalsIgnoreCase("vent")) {
+                    Amongus.getVentManager().addPlayer(player);
+                    player.sendMessage(MessageManager.vent_mode);
+                }
             }
         }else{
             sender.sendMessage(MessageManager.not_player);

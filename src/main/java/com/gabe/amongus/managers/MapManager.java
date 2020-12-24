@@ -61,6 +61,7 @@ public class MapManager {
             }
             maps.add(map);
         }
+        Amongus.getGameManager().reloadGames();
     }
 
     public void saveMap(com.gabe.amongus.maps.Map map){
@@ -86,7 +87,7 @@ public class MapManager {
 
         List<String> vents = new ArrayList<>();
         for(java.util.Map.Entry<Location, Location> entry : map.getVents().entrySet()){
-            rooms.add(serialiseLoc(entry.getKey()) + "," + serialiseLoc(entry.getValue()));
+            vents.add(serialiseLoc(entry.getKey()) + "," + serialiseLoc(entry.getValue()));
         }
         gameData.set(map.getName()+".vents", vents);
 
